@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0450DAE222CC8E7600CC8062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450DAE122CC8E7600CC8062 /* AppDelegate.swift */; };
-		0450DAE422CC8E7600CC8062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450DAE322CC8E7600CC8062 /* ViewController.swift */; };
+		0450DAE422CC8E7600CC8062 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450DAE322CC8E7600CC8062 /* PickerViewController.swift */; };
 		0450DAE722CC8E7600CC8062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0450DAE522CC8E7600CC8062 /* Main.storyboard */; };
 		0450DAE922CC8E7800CC8062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0450DAE822CC8E7800CC8062 /* Assets.xcassets */; };
 		0450DAEC22CC8E7800CC8062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0450DAEA22CC8E7800CC8062 /* LaunchScreen.storyboard */; };
+		0450DAF422CC981E00CC8062 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450DAF322CC981E00CC8062 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0450DADE22CC8E7600CC8062 /* RoshamboProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoshamboProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0450DAE122CC8E7600CC8062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0450DAE322CC8E7600CC8062 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0450DAE322CC8E7600CC8062 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		0450DAE622CC8E7600CC8062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0450DAE822CC8E7800CC8062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0450DAEB22CC8E7800CC8062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0450DAED22CC8E7800CC8062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0450DAF322CC981E00CC8062 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				0450DAE122CC8E7600CC8062 /* AppDelegate.swift */,
-				0450DAE322CC8E7600CC8062 /* ViewController.swift */,
+				0450DAE322CC8E7600CC8062 /* PickerViewController.swift */,
 				0450DAE522CC8E7600CC8062 /* Main.storyboard */,
 				0450DAE822CC8E7800CC8062 /* Assets.xcassets */,
 				0450DAEA22CC8E7800CC8062 /* LaunchScreen.storyboard */,
 				0450DAED22CC8E7800CC8062 /* Info.plist */,
+				0450DAF322CC981E00CC8062 /* ResultViewController.swift */,
 			);
 			path = RoshamboProject;
 			sourceTree = "<group>";
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0450DAE422CC8E7600CC8062 /* ViewController.swift in Sources */,
+				0450DAE422CC8E7600CC8062 /* PickerViewController.swift in Sources */,
 				0450DAE222CC8E7600CC8062 /* AppDelegate.swift in Sources */,
+				0450DAF422CC981E00CC8062 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PickerViewController.swift
 //  RoshamboProject
 //
 //  Created by mac on 03/07/2019.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PickerViewController: UIViewController {
 
+    @IBOutlet weak var buttonPaper: UIImageView!
+    @IBOutlet weak var buttonRock: UIImageView!
+    @IBOutlet weak var buttonScissors: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
