@@ -18,45 +18,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="eh9-6P-kjY">
-                                <rect key="frame" x="138" y="168" width="99" height="70"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scissors" translatesAutoresizingMaskIntoConstraints="NO" id="isP-2b-drE">
-                                <rect key="frame" x="35" y="298" width="98" height="71"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="FHa-ne-FPx">
-                                <rect key="frame" x="251" y="298" width="98" height="71"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jc-4k-Rbe" userLabel="Paper">
+                                <rect key="frame" x="161" y="174" width="75" height="65"/>
+                                <state key="normal" image="paper"/>
+                                <connections>
+                                    <action selector="selectPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jro-kp-faI"/>
+                                    <action selector="selectRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4c-th-9Sw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1A0-s9-gqk" userLabel="Rock">
+                                <rect key="frame" x="230" y="301" width="75" height="65"/>
+                                <state key="normal" image="rock"/>
+                                <connections>
+                                    <action selector="selectRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyo-dY-WfZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFN-W8-HXf" userLabel="Scissors">
+                                <rect key="frame" x="77" y="301" width="75" height="65"/>
+                                <state key="normal" image="scissors"/>
+                                <connections>
+                                    <segue destination="zDk-T7-uy8" kind="show" identifier="select" id="KvY-kO-KtF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.28988254600000002" green="1" blue="0.20543647800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="isP-2b-drE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="4BY-qb-cTT"/>
-                            <constraint firstItem="isP-2b-drE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="278" id="4fw-De-qns"/>
-                            <constraint firstItem="eh9-6P-kjY" firstAttribute="leading" secondItem="isP-2b-drE" secondAttribute="trailing" constant="5" id="793-pS-RVt"/>
-                            <constraint firstItem="FHa-ne-FPx" firstAttribute="leading" secondItem="eh9-6P-kjY" secondAttribute="trailing" constant="7" id="Cxw-dd-CoC"/>
-                            <constraint firstItem="isP-2b-drE" firstAttribute="bottom" secondItem="FHa-ne-FPx" secondAttribute="bottom" id="F4P-5b-prS"/>
-                            <constraint firstItem="eh9-6P-kjY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="FOH-O7-xRr"/>
-                            <constraint firstItem="isP-2b-drE" firstAttribute="top" secondItem="FHa-ne-FPx" secondAttribute="top" id="Gm4-Fu-V55"/>
-                            <constraint firstItem="eh9-6P-kjY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-597" id="ZaZ-qU-BPw"/>
-                            <constraint firstItem="isP-2b-drE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mLx-N3-mmO"/>
-                            <constraint firstItem="eh9-6P-kjY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="p8U-rH-RCU"/>
-                            <constraint firstItem="eh9-6P-kjY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x5f-Ku-crQ"/>
+                            <constraint firstItem="4jc-4k-Rbe" firstAttribute="leading" secondItem="PFN-W8-HXf" secondAttribute="trailing" constant="9" id="CCY-sR-RSQ"/>
+                            <constraint firstItem="4jc-4k-Rbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="F5n-A8-Bdc"/>
+                            <constraint firstItem="4jc-4k-Rbe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="H78-7K-U3s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1A0-s9-gqk" secondAttribute="trailing" constant="70" id="Q3q-9m-Mec"/>
+                            <constraint firstItem="1A0-s9-gqk" firstAttribute="leading" secondItem="4jc-4k-Rbe" secondAttribute="trailing" constant="-6" id="QrP-Gm-qWI"/>
+                            <constraint firstItem="PFN-W8-HXf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="T1p-fK-YOs"/>
+                            <constraint firstItem="PFN-W8-HXf" firstAttribute="top" secondItem="4jc-4k-Rbe" secondAttribute="bottom" constant="62" id="WQx-cz-lJZ"/>
+                            <constraint firstItem="1A0-s9-gqk" firstAttribute="top" secondItem="4jc-4k-Rbe" secondAttribute="bottom" constant="62" id="dVE-OH-Hat"/>
+                            <constraint firstItem="1A0-s9-gqk" firstAttribute="leading" secondItem="4jc-4k-Rbe" secondAttribute="trailing" constant="-6" id="iv7-Wy-cEN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="buttonPaper" destination="eh9-6P-kjY" id="DrR-Ej-Eyo"/>
-                        <outlet property="buttonRock" destination="FHa-ne-FPx" id="fHP-cM-TDw"/>
-                        <outlet property="buttonScissors" destination="isP-2b-drE" id="hyg-Yd-qwW"/>
+                        <outlet property="buttonPaper" destination="4jc-4k-Rbe" id="8b2-rP-Ogh"/>
+                        <outlet property="buttonRock" destination="1A0-s9-gqk" id="3pF-8P-ovv"/>
+                        <outlet property="buttonScissors" destination="PFN-W8-HXf" id="KqR-b3-cLW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="505" y="134"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="pkI-0g-bCT">
             <objects>
-                <viewController id="zDk-T7-uy8" customClass="ResultViewController" customModule="RoshamboProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="zDk-T7-uy8" customClass="ResultViewController" customModule="RoshamboProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yI1-Nn-tWC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,6 +91,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Q5j-rZ-QlK"/>
                                 </constraints>
                                 <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="zDk-T7-uy8" eventType="touchUpInside" id="fT1-ca-CsZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdP-uP-IRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797.60000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1367" y="134"/>
         </scene>
     </scenes>
     <resources>
