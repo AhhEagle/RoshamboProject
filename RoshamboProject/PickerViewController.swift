@@ -18,17 +18,21 @@ class PickerViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    //Instantiating View using code only
     @IBAction func selectPaper(_ sender: UIButton) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
         controller.userChoice = getShape(sender)
         present(controller, animated: true, completion: nil)
     }
     
+    //Instantiating the View using code + segue
+    
     @IBAction func selectRock(_ sender: Any) {
         performSegue(withIdentifier: "select", sender: sender)
     }
     
+    //Preparing the view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "select"{
             let controller = segue.destination as! ResultViewController
