@@ -52,7 +52,7 @@ class PickerViewController: UIViewController {
         
         if (playerMove == RoshamboModel.paper) {
             // Get the storyboard and ResultViewController
-            let storyboard = UIStoryboard (name: "PickerViewController", bundle: nil)
+            let storyboard = UIStoryboard (name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
             
             // the result is passed accross
@@ -61,8 +61,13 @@ class PickerViewController: UIViewController {
         }
             
         else if (playerMove == RoshamboModel.rock) {
-            performSegue(withIdentifier: "select", sender: self)
+            performSegue(withIdentifier: "selectrock", sender: self)
         }
+    }
+    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! ResultViewController
+        controller.match = self.match
     }
     /*
     //Instantiating View using code only

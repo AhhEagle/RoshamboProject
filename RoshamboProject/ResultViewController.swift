@@ -25,7 +25,6 @@ enum Picture: String {
  */
 
 class ResultViewController: UIViewController {
-    
     var match: ResultHistory!
     var message: NSString!
     var picture: UIImage!

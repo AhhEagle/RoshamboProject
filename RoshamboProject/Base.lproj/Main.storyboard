@@ -37,6 +37,7 @@
                                 <state key="normal" image="scissors"/>
                                 <connections>
                                     <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYg-0s-qaU"/>
+                                    <segue destination="zDk-T7-uy8" kind="show" identifier="selectscissors" id="you-eP-ucy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,7 +58,8 @@
                     <connections>
                         <outlet property="buttonPaper" destination="4jc-4k-Rbe" id="8b2-rP-Ogh"/>
                         <outlet property="buttonRock" destination="1A0-s9-gqk" id="3pF-8P-ovv"/>
-                        <outlet property="buttonScissors" destination="PFN-W8-HXf" id="KqR-b3-cLW"/>
+                        <outlet property="buttonScissor" destination="PFN-W8-HXf" id="BF9-Yg-2EN"/>
+                        <segue destination="zDk-T7-uy8" kind="show" identifier="selectrock" id="h4q-E8-rmy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,8 +112,8 @@
                     </view>
                     <connections>
                         <outlet property="reset" destination="i1m-TL-YxV" id="6Ma-KD-FLD"/>
-                        <outlet property="resultButton" destination="W7w-zM-H6Z" id="2fn-m7-CUb"/>
                         <outlet property="resultImage" destination="uMq-vc-vwE" id="5kI-xy-HVy"/>
+                        <outlet property="resultLabel" destination="W7w-zM-H6Z" id="A9c-Ks-efi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdP-uP-IRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,4 +126,7 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="h4q-E8-rmy"/>
+    </inferredMetricsTieBreakers>
 </document>
