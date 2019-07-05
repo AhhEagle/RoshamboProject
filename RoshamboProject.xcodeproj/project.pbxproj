@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0440197822CF1EC40013E6C5 /* RoshamboModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440197722CF1EC40013E6C5 /* RoshamboModel.swift */; };
 		0450DAE222CC8E7600CC8062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450DAE122CC8E7600CC8062 /* AppDelegate.swift */; };
 		0450DAE422CC8E7600CC8062 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450DAE322CC8E7600CC8062 /* PickerViewController.swift */; };
 		0450DAE722CC8E7600CC8062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0450DAE522CC8E7600CC8062 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0440197722CF1EC40013E6C5 /* RoshamboModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboModel.swift; sourceTree = "<group>"; };
 		0450DADE22CC8E7600CC8062 /* RoshamboProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoshamboProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0450DAE122CC8E7600CC8062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0450DAE322CC8E7600CC8062 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				0450DAEA22CC8E7800CC8062 /* LaunchScreen.storyboard */,
 				0450DAED22CC8E7800CC8062 /* Info.plist */,
 				0450DAF322CC981E00CC8062 /* ResultViewController.swift */,
+				0440197722CF1EC40013E6C5 /* RoshamboModel.swift */,
 			);
 			path = RoshamboProject;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				0450DAE422CC8E7600CC8062 /* PickerViewController.swift in Sources */,
 				0450DAE222CC8E7600CC8062 /* AppDelegate.swift in Sources */,
+				0440197822CF1EC40013E6C5 /* RoshamboModel.swift in Sources */,
 				0450DAF422CC981E00CC8062 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
