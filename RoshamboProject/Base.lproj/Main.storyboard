@@ -22,22 +22,21 @@
                                 <rect key="frame" x="161" y="174" width="75" height="65"/>
                                 <state key="normal" image="paper"/>
                                 <connections>
-                                    <action selector="selectPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jro-kp-faI"/>
-                                    <action selector="selectRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4c-th-9Sw"/>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hza-HC-sA9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1A0-s9-gqk" userLabel="Rock">
                                 <rect key="frame" x="230" y="301" width="75" height="65"/>
                                 <state key="normal" image="rock"/>
                                 <connections>
-                                    <action selector="selectRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyo-dY-WfZ"/>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNg-eb-c7w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFN-W8-HXf" userLabel="Scissors">
                                 <rect key="frame" x="77" y="301" width="75" height="65"/>
                                 <state key="normal" image="scissors"/>
                                 <connections>
-                                    <segue destination="zDk-T7-uy8" kind="show" identifier="select" id="KvY-kO-KtF"/>
+                                    <action selector="makeMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYg-0s-qaU"/>
                                 </connections>
                             </button>
                         </subviews>
