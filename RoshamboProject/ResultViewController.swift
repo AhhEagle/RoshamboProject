@@ -9,6 +9,7 @@
 import UIKit
 
 // The enum "Shape" represents a play or move
+/*
 enum Picture: String {
     case Rock = "Rock"
     case Paper = "Paper"
@@ -21,18 +22,84 @@ enum Picture: String {
         return Picture(rawValue: shapes[randomChoice])!
     }
 }
+ */
 
 class ResultViewController: UIViewController {
     
-    @IBOutlet weak var resultButton: UILabel!
+    var match: ResultHistory!
+    var message: NSString!
+    var picture: UIImage!
+    
+    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var reset: UIButton!
     @IBOutlet weak var resultImage: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
-        displayResult()
+        super.viewWillAppear(animated)
+        self.resultLabel.text = messageDisplayed(match)
+        self.resultImage.image = imageDisplayed(match)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1.5)
+        {
+            self.resultImage.alpha = 1.5;
+        }
+    }
+    
+    func messageDisplayed(_ match: ResultHistory) -> String {
+        
+        // tie
+        if match.p1 == match.p2 {
+            return "Retry: It's a tie!"
+        }
+        
+        // other messagesto be displayed
+        return match.winner.description + " " + youWin(match.winner) + " " + match.loser.description + ". " + resultString(match)
+    }
+    
+    func resultString(_ match: ResultHistory) -> String {
+        return match.p1.move(opponentmove: match.p2) ? "You Win!" : "You Lose!"
+    }
+    
+    
+    func youWin(_ pressed: RoshamboModel) -> String {
+        switch (pressed) {
+        case .paper:
+            return "waoooo"
+        case .rock:
+            return "You rock"
+        case .scissor:
+            return "Great"
+        
+        }
+    }
+    
+    func imageDisplayed(_ match: ResultHistory) -> UIImage {
+        
+        var name = ""
+        
+        switch (match.winner) {
+        case .paper:
+            name = "PaperCoversRock"
+        case .rock:
+            name = "RockCrushesScissors"
+        case .scissor:
+            name = "ScissorsCutPaper"
+        }
+        
+        if match.p1 == match.p2 {
+            name = "itsATie"
+        }
+        return UIImage(named: name)!
+    }
+
+    
+
     // When the ResultViewController is initialized a userChoice is passed in and an opponent's play is generated.
+    /*
     var userChoice: Picture!
     private let systemChoice: Picture = Picture.randomShape()
     
@@ -59,7 +126,7 @@ class ResultViewController: UIViewController {
         imageName = imageName.lowercased()
         resultImage.image = UIImage(named: imageName)
         resultButton.text = text
-    }
+    }*/
     
    
     

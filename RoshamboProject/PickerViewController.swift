@@ -9,6 +9,8 @@
 import UIKit
 
 class PickerViewController: UIViewController {
+    
+    var match: ResultHistory!
 
     @IBOutlet weak var buttonPaper: UIButton!
     @IBOutlet weak var buttonRock: UIButton!
